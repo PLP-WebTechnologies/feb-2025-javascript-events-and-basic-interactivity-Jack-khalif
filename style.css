@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #444;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #888;
+  background-color: #eee;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+#hoverBox {
+  width: 200px;
+  height: 100px;
+  background-color: #a2d5f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  border-radius: 8px;
+  font-weight: bold;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+#hoverBox.hovered {
+  background-color: #07689f;
+  color: white;
+}
+
+#gallery {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.accordion-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #eee;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-btn.active {
+  background-color: #ccc;
+}
+
+.accordion-content {
+  display: none;
+  padding: 0.5rem 1rem;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ccc;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+#formMsg {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#secretMsg {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: green;
+  font-weight: bold;
+}
