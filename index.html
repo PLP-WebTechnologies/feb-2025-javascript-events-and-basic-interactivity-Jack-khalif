@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Event Handling & Interactive Elements</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>JavaScript Event Handling & Interactive Elements</h1>
+
+  <!-- 1. Event Handling -->
+  <section id="event-handling">
+    <h2>1. Event Handling 🎈</h2>
+
+    <button id="clickBtn">Click Me!</button>
+    <p id="clickResult"></p>
+
+    <div id="hoverBox">Hover over me!</div>
+
+    <input type="text" id="keyInput" placeholder="Press any key here" />
+
+    <button id="secretBtn">Double-click me or long press me!</button>
+    <p id="secretMsg"></p>
+  </section>
+
+  <!-- 2. Interactive Elements -->
+  <section id="interactive-elements">
+    <h2>2. Interactive Elements 🎮</h2>
+
+    <!-- Button to change text and color -->
+    <button id="colorTextBtn">Change my text & color</button>
+
+    <!-- Simple Image Gallery -->
+    <div id="gallery">
+      <img id="galleryImg" src="https://picsum.photos/id/1015/300/200" alt="Gallery Image" />
+      <div>
+        <button id="prevImg">Previous</button>
+        <button id="nextImg">Next</button>
+      </div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="accordion">
+      <button class="accordion-btn">Section 1</button>
+      <div class="accordion-content">Content for section 1</div>
+
+      <button class="accordion-btn">Section 2</button>
+      <div class="accordion-content">Content for section 2</div>
+
+      <button class="accordion-btn">Section 3</button>
+      <div class="accordion-content">Content for section 3</div>
+    </div>
+  </section>
+
+  <!-- 3. Form Validation -->
+  <section id="form-validation">
+    <h2>3. Form Validation 📋✅</h2>
+
+    <form id="signupForm" novalidate>
+      <label>
+        Name (required):<br />
+        <input type="text" id="name" required />
+        <span class="error" id="nameError"></span>
+      </label>
+      <br /><br />
+
+      <label>
+        Email (required):<br />
+        <input type="email" id="email" required />
+        <span class="error" id="emailError"></span>
+      </label>
+      <br /><br />
+
+      <label>
+        Password (min 8 chars):<br />
+        <input type="password" id="password" required />
+        <span class="error" id="passwordError"></span>
+      </label>
+      <br /><br />
+
+      <button type="submit">Submit</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
